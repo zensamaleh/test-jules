@@ -45,9 +45,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gray-50">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold text-center text-gray-800">
-          Importer une source de données
-        </h1>
+        <div className="flex justify-between items-center w-full">
+          <h1 className="text-2xl font-bold text-gray-800">
+            Importer une source de données
+          </h1>
+          <div className="flex items-center space-x-4">
+            <a href="/gems/new" className="text-sm font-medium text-blue-600 hover:underline">
+                + New Gem
+            </a>
+            <a href="/chat" className="text-sm font-medium text-blue-600 hover:underline">
+                Aller au Chat →
+            </a>
+          </div>
+        </div>
         <p className="text-center text-gray-600">
           Téléversez un fichier (CSV, PDF, etc.) pour l&apos;ajouter à la base de connaissances.
         </p>
